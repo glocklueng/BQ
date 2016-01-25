@@ -1,0 +1,208 @@
+EESchema Schematic File Version 2
+LIBS:BQ-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BQ-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 32 33
+Title ""
+Date ""
+Rev ""
+Comp "FESB"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4950 3700 1050 600 
+U 565A4B87
+F0 "Battery cell" 60
+F1 "Batt.sch" 60
+F2 "-B" I R 6000 4000 60 
+F3 "+B" I L 4950 4000 60 
+$EndSheet
+Text Notes 1250 1100 0    60   ~ 0
+This is just mesurment and balancing circuit
+$Comp
+L R-RESCUE-BMS R26
+U 1 1 565A4B89
+P 4900 2850
+AR Path="/3A5B5476/3A50984C/565A4B89" Ref="R26"  Part="1" 
+AR Path="/3A5B5476/3A54231A/565A4B89" Ref="R45"  Part="1" 
+AR Path="/3A5B5476/3A54397C/565A4B89" Ref="R61"  Part="1" 
+F 0 "R26" V 4980 2850 40  0000 C CNN
+F 1 "50" V 4907 2851 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4830 2850 30  0001 C CNN
+F 3 "" H 4900 2850 30  0000 C CNN
+	1    4900 2850
+	0    -1   1    0   
+$EndComp
+$Comp
+L ZENER-RESCUE-BMS D23
+U 1 1 55BD5ABC
+P 5900 2400
+AR Path="/3A5B5476/3A50984C/55BD5ABC" Ref="D23"  Part="1" 
+AR Path="/3A5B5476/3A54231A/55BD5ABC" Ref="D29"  Part="1" 
+AR Path="/3A5B5476/3A54397C/55BD5ABC" Ref="D34"  Part="1" 
+F 0 "D23" H 5900 2500 50  0000 C CNN
+F 1 "5,6" H 5900 2300 40  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 5900 2400 60  0001 C CNN
+F 3 "" H 5900 2400 60  0000 C CNN
+	1    5900 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-RESCUE-BMS R28
+U 1 1 55BD5B30
+P 6400 1950
+AR Path="/3A5B5476/3A50984C/55BD5B30" Ref="R28"  Part="1" 
+AR Path="/3A5B5476/3A54231A/55BD5B30" Ref="R47"  Part="1" 
+AR Path="/3A5B5476/3A54397C/55BD5B30" Ref="R63"  Part="1" 
+F 0 "R28" V 6480 1950 40  0000 C CNN
+F 1 "1K" V 6407 1951 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6330 1950 30  0001 C CNN
+F 3 "" H 6400 1950 30  0000 C CNN
+F 4 "Rc" V 6400 1950 60  0001 C CNN "Name"
+	1    6400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-BMS R25
+U 1 1 55BD5E1E
+P 4500 2250
+AR Path="/3A5B5476/3A50984C/55BD5E1E" Ref="R25"  Part="1" 
+AR Path="/3A5B5476/3A54231A/55BD5E1E" Ref="R44"  Part="1" 
+AR Path="/3A5B5476/3A54397C/55BD5E1E" Ref="R60"  Part="1" 
+F 0 "R25" V 4580 2250 40  0000 C CNN
+F 1 "1K" V 4507 2251 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4430 2250 30  0001 C CNN
+F 3 "" H 4500 2250 30  0000 C CNN
+	1    4500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-BMS C15
+U 1 1 565A4B8C
+P 5100 1650
+AR Path="/3A5B5476/3A50984C/565A4B8C" Ref="C15"  Part="1" 
+AR Path="/3A5B5476/3A54231A/565A4B8C" Ref="C21"  Part="1" 
+AR Path="/3A5B5476/3A54397C/565A4B8C" Ref="C26"  Part="1" 
+F 0 "C15" V 5250 1600 40  0000 L CNN
+F 1 "10u" V 4950 1600 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5138 1500 30  0001 C CNN
+F 3 "" H 5100 1650 60  0000 C CNN
+F 4 "Cc" V 5100 1650 60  0001 C CNN "Name"
+	1    5100 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-BMS R27
+U 1 1 55BD60D7
+P 5400 1950
+AR Path="/3A5B5476/3A50984C/55BD60D7" Ref="R27"  Part="1" 
+AR Path="/3A5B5476/3A54231A/55BD60D7" Ref="R46"  Part="1" 
+AR Path="/3A5B5476/3A54397C/55BD60D7" Ref="R62"  Part="1" 
+F 0 "R27" V 5480 1950 40  0000 C CNN
+F 1 "10K" V 5407 1951 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5330 1950 30  0001 C CNN
+F 3 "" H 5400 1950 30  0000 C CNN
+	1    5400 1950
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 1300 0    60   Input ~ 0
+VC_1
+Text HLabel 6400 1300 0    60   Input ~ 0
+VC_0
+Text HLabel 4150 2850 0    60   Input ~ 0
+VC_1d
+Text HLabel 6400 1300 2    60   Input ~ 0
+VC_0d
+Text Notes 6200 1850 0    60   ~ 0
+Rin or Rc
+Wire Wire Line
+	4500 1300 4500 2000
+Connection ~ 4500 2850
+Wire Wire Line
+	4150 2850 4650 2850
+Wire Wire Line
+	5150 2850 5200 2850
+Connection ~ 6400 2400
+Wire Wire Line
+	6100 2400 6400 2400
+Connection ~ 6400 2850
+Wire Wire Line
+	5400 2200 5400 2550
+Wire Wire Line
+	5700 2400 5400 2400
+Wire Wire Line
+	6400 4000 6000 4000
+Wire Wire Line
+	6400 1300 6400 1700
+Wire Wire Line
+	4500 1650 4900 1650
+Wire Wire Line
+	5400 1700 5400 1650
+Connection ~ 5400 1650
+Connection ~ 5400 2400
+Connection ~ 4500 1650
+Wire Wire Line
+	4500 2500 4500 4000
+Wire Wire Line
+	6400 4000 6400 2200
+Wire Wire Line
+	5600 2850 6400 2850
+Text Notes 4300 2050 0    60   ~ 0
+Rin or Rc
+Wire Wire Line
+	5300 1650 6400 1650
+Wire Wire Line
+	6400 1650 6400 1600
+Connection ~ 6400 1600
+Wire Wire Line
+	4500 4000 4950 4000
+$Comp
+L MOSFET_N Q5
+U 1 1 565A31AE
+P 5400 2750
+AR Path="/3A5B5476/3A50984C/565A31AE" Ref="Q5"  Part="1" 
+AR Path="/3A5B5476/3A54231A/565A31AE" Ref="Q11"  Part="1" 
+AR Path="/3A5B5476/3A54397C/565A31AE" Ref="Q16"  Part="1" 
+F 0 "Q5" H 5410 2920 60  0000 R CNN
+F 1 "MOSFET_N" H 5410 2600 60  0000 R CNN
+F 2 "CRF1:DFB1006-4" H 5400 2750 60  0001 C CNN
+F 3 "" H 5400 2750 60  0000 C CNN
+	1    5400 2750
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
